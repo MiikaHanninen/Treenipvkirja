@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+    <title>Treenipäiväkirja</title>
+</head> 
+<body>
+<div class="container">
+    <h1>Golf ja salitreenit</h1>
+    <div class="r">
+        <div class="a">
+            <h2>Lisää treeni</h2>
+            <form id="treeniForm">
+                <label for="activity">Aktiviteetti</label>
+                <select id="activity">
+                    <option value="kuntosali">Kuntosali</option>
+                    <option value="golf">Golf</option>
+                </select>
+                <label for="date">Päivämäärä</label>
+                <input type="date" id="date">
+                <label for="duration">Kesto (minuutteina)</label>
+                <input type="number" id="duration" placeholder="60" min="1">
+                <label for="activity">Oliko hauskaa?</label>
+                <select id="hauskaa">
+                    <option value="kyllä">Kyllä</option>
+                    <option value="ei">Ei</option>
+                    </select>
+                <button type="button" id="addTreeni">Lisää treeni</button>
+                
+            </form>
+                  
+        </div>
+        <div class="lisatytGolf">
+            <h2>Golftreenit</h2>
+            <ul id="golftreenit">
+                <!--TÄNNE LISÄTÄÄN GOLFTREENIT-->
+            </ul>
+         <button type="button" id="tyhjennagolf">Tyhjennä</button>   <!--TYHJENNÄ BUTTON GOLFTREENILLE-->
+        </div>
+        <div class="lisatytSali">
+            <h2>Salitreenit</h2>
+            <ul id="salitreenit">
+                <!--TÄNNE LISÄTÄÄN SALITREENIT-->
+            </ul>
+            <button type="button" id="tyhjennasali">Tyhjennä</button> <!--TYHJENNÄ BUTTON SALITREENILLE-->
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
